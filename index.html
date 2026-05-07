@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Michaelraj | Systems Architect & Technical Leader</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { 
+            background: radial-gradient(circle at top right, #1e293b, #0f172a, #020617);
+            color: #f8fafc;
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .accent-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .skill-pill {
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            color: #7dd3fc;
+            padding: 4px 12px;
+            border-radius: 8px;
+            font-size: 0.65rem;
+            font-weight: 600;
+        }
+        .cert-badge {
+            background: linear-gradient(145deg, rgba(56, 189, 248, 0.15), rgba(30, 41, 59, 0.5));
+            border: 1px solid rgba(56, 189, 248, 0.4);
+            transition: all 0.3s ease;
+        }
+        .cert-badge:hover {
+            border-color: #38bdf8;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+            transform: translateY(-2px);
+        }
+        .sidebar-item { border-left: 2px solid rgba(56, 189, 248, 0.3); padding-left: 1.5rem; }
+        .list-square { list-style-type: square; }
+    </style>
+</head>
+<body class="antialiased min-h-screen p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <aside class="lg:col-span-4 space-y-8">
+            <div class="glass-card p-8 sticky top-8">
+                <div class="mb-8 text-center lg:text-left">
+                    <h1 class="text-4xl font-extrabold tracking-tight mb-2">Richard <span class="accent-gradient">Michaelraj</span></h1>
+                    <p class="text-slate-400 font-medium mono text-xs uppercase tracking-widest">Senior Technical Leader, Engineering</p>
+                </div>
+                
+                <div class="space-y-4 text-slate-300 text-sm mb-10">
+                    <div class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-sky-400 w-5"></i> Tracy, CA</div>
+                    <div class="flex items-center gap-3"><i class="fas fa-phone text-sky-400 w-5"></i> +1 (408) 421-7262</div>
+                    <div class="flex items-center gap-3"><i class="fas fa-envelope text-sky-400 w-5"></i> rickyccie0@gmail.com</div>
+                    <div class="flex items-center gap-3"><i class="fab fa-linkedin text-sky-400 w-5"></i> linkedin.com/in/richard-michaelraj-1437b610</div>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-slate-500 border-b border-white/10 pb-2">Technical Matrix</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-[10px] text-sky-400 font-bold mb-2 uppercase tracking-tighter">Core Networking & Data Center</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-pill">TCP/IP</span><span class="skill-pill">BGP</span><span class="skill-pill">OSPF</span><span class="skill-pill">EIGRP</span>
+                                <span class="skill-pill">STP</span><span class="skill-pill">LACP</span><span class="skill-pill">vPC</span><span class="skill-pill">FHRP</span>
+                                <span class="skill-pill">Netflow</span><span class="skill-pill">Telemetry</span><span class="skill-pill">SNMP</span><span class="skill-pill">QoS</span>
+                                <span class="skill-pill">PIM</span><span class="skill-pill">IGMP</span><span class="skill-pill">VXLAN-EVPN</span><span class="skill-pill">MPLS L2/L3VPN</span>
+                                <span class="skill-pill">AI/ML Fabric</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[10px] text-sky-400 font-bold mb-2 uppercase tracking-tighter">Hardware & OS Platforms</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-pill">Cisco Nexus (9k, 7k, 56k, 3k, 2k)</span><span class="skill-pill">UCS</span>
+                                <span class="skill-pill">BRCM [Trident/Tomahawk]</span><span class="skill-pill">Cloud Scale</span>
+                                <span class="skill-pill">S1 ASICs</span><span class="skill-pill">AMD DPUs</span><span class="skill-pill">X5 Connect NICs</span>
+                                <span class="skill-pill">Spectrum-X</span><span class="skill-pill">NXOS</span><span class="skill-pill">IOS/IOS-XE</span>
+                                <span class="skill-pill">Sonic</span><span class="skill-pill">Arista EoS</span>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[10px] text-sky-400 font-bold mb-2 uppercase tracking-tighter">Virtualization, Test & Analysis</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-pill">VMware ESXi</span><span class="skill-pill">KVM</span><span class="skill-pill">Docker</span>
+                                <span class="skill-pill">Kubernetes</span><span class="skill-pill">Wireshark</span><span class="skill-pill">IXIA</span>
+                                <span class="skill-pill">Spirent</span><span class="skill-pill">Scapy</span><span class="skill-pill">NCCL</span><span class="skill-pill">ML PERF</span>
+                                <span class="skill-pill">PyATS</span><span class="skill-pill">Prometheus</span><span class="skill-pill">Grafana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="lg:col-span-8 space-y-8">
+            
+            <section class="glass-card p-8">
+                <h2 class="text-xl font-bold mb-4 flex items-center gap-3 italic"><i class="fas fa-terminal text-sky-400"></i> Professional Summary</h2>
+                <p class="text-slate-300 leading-relaxed text-sm">
+                    A highly accomplished and innovative Technical Leader with over 18 years of comprehensive experience across Data Center Networking, Automation, SDN/Cloud solutions, and high-performance systems[cite: 4]. Proven leadership in managing global-scale projects and resolving complex engineering escalations for international Fortune 100 clients in telecom, finance, and the public sector[cite: 5]. Possesses a deep, hands-on technical background combined with a strategic mindset, adept at driving cross-functional business objectives, process improvements, and product serviceability for the AI era[cite: 6].
+                </p>
+            </section>
+
+            <section class="glass-card p-8">
+                <h2 class="text-xl font-bold mb-6 flex items-center gap-3 italic"><i class="fas fa-medal text-sky-400"></i> Expert Certifications</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="cert-badge p-4 rounded-xl flex items-center gap-4">
+                        <i class="fas fa-shield-halved text-sky-400 text-2xl"></i>
+                        <div>
+                            <p class="text-xs font-bold text-white uppercase tracking-wider">Cisco Certified Internetwork Expert (CCIE) Data Center</p>
+                            <p class="text-[10px] text-sky-300 mono">#46527 [cite: 51]</p>
+                        </div>
+                    </div>
+                    <div class="cert-badge p-4 rounded-xl flex items-center gap-4">
+                        <i class="fas fa-microchip text-sky-400 text-2xl"></i>
+                        <div>
+                            <p class="text-xs font-bold text-white uppercase tracking-wider">NVIDIA Certified RDMA Programming</p>
+                            <p class="text-[10px] text-sky-300 mono">High Performance Systems [cite: 53]</p>
+                        </div>
+                    </div>
+                    <div class="cert-badge p-4 rounded-xl flex items-center gap-4">
+                        <i class="fas fa-code text-sky-400 text-2xl"></i>
+                        <div>
+                            <p class="text-xs font-bold text-white uppercase tracking-wider">Cisco Certified DevNet Associate</p>
+                            <p class="text-[10px] text-sky-300 mono">Automation & Programmability [cite: 52]</p>
+                        </div>
+                    </div>
+                    <div class="cert-badge p-4 rounded-xl flex items-center gap-4">
+                        <i class="fas fa-server text-sky-400 text-2xl"></i>
+                        <div>
+                            <p class="text-xs font-bold text-white uppercase tracking-wider">VMware Certified Professional (VCP 5.0)</p>
+                            <p class="text-[10px] text-sky-300 mono">Data Center Virtualization [cite: 53]</p>
+                        </div>
+                    </div>
+                    <div class="cert-badge p-4 rounded-xl flex items-center gap-4">
+                        <i class="fas fa-network-wired text-sky-400 text-2xl"></i>
+                        <div>
+                            <p class="text-xs font-bold text-white uppercase tracking-wider">Juniper Certified Associate (JNCIA-ER)</p>
+                            <p class="text-[10px] text-sky-300 mono">Enterprise Routing [cite: 54]</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="glass-card p-8 space-y-12">
+                <h2 class="text-xl font-bold mb-8 flex items-center gap-3 italic"><i class="fas fa-briefcase text-sky-400"></i> Professional Experience</h2>
+                
+                <div class="sidebar-item relative">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="text-xl font-bold text-white uppercase tracking-tight">Senior Technical Leader, Engineering</h3>
+                        <span class="mono text-xs text-sky-400 uppercase font-bold tracking-widest">Oct 2015 – Present</span>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-500 mb-6 uppercase tracking-wider">Cisco Systems | San Jose, CA [cite: 18]</p>
+                    
+                    <div class="space-y-8 text-sm text-slate-300">
+                        <p class="italic text-slate-400 mb-4">Served as the definitive technical authority for Nexus data center platforms, managing high-stakes escalations and driving strategic initiatives to enhance product quality, performance, and serviceability[cite: 19].</p>
+                        
+                        <div>
+                            <span class="block mono text-[10px] text-sky-400 font-bold mb-3 uppercase tracking-widest">Product Strategy & Development</span>
+                            <ul class="list-square list-inside space-y-2 ml-2">
+                                <li>Drive product strategy, requirements, and evangelism for cloud networking innovations[cite: 20].</li>
+                                <li>Key Escalation Focal point for high yield business accounts[cite: 21].</li>
+                                <li>Driven Cisco live whisper suites discussions, customer interlocks related to Enterprise, SP and AI/ML Fabric designs[cite: 22].</li>
+                                <li>Defined go-to-market strategies, interfaced with engineering and sales[cite: 23].</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <span class="block mono text-[10px] text-sky-400 font-bold mb-3 uppercase tracking-widest">Leadership & Escalation Management</span>
+                            <ul class="list-square list-inside space-y-2 ml-2">
+                                <li>Directed cross-functional teams across global engineering, QA, and customer delivery to resolve catastrophic, revenue-impacting issues[cite: 24].</li>
+                                <li>Managed critical escalations for Tier-1 service providers like Jio, delegating tasks to large teams of NCEs/TAC leads/Solution Architects.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <span class="block mono text-[10px] text-sky-400 font-bold mb-3 uppercase tracking-widest">Technical Innovation & Product Hardening</span>
+                            <ul class="list-square list-inside space-y-2 ml-2">
+                                <li>Contributor to technical defensive publications[cite: 26].</li>
+                                <li>Spearheaded the "Platform Insights Engine" initiative, leveraging AI/ML to proactively detect SFP and system issues from manufacturing to production[cite: 27].</li>
+                                <li>Identified systemic trends in product issues, leading initiatives that significantly hardened product software and reduced customer downtime[cite: 40].</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <span class="block mono text-[10px] text-sky-400 font-bold mb-3 uppercase tracking-widest">ASIC & System-Level Debugging</span>
+                            <ul class="list-square list-inside space-y-2 ml-2">
+                                <li>Served as the final point of escalation for complex software, SDK, firmware, and hardware-level issues on Broadcom and proprietary Cloud Scale/S1 ASICs[cite: 28].</li>
+                                <li>Identifying and driving fixes for numerous software defects and vulnerabilities[cite: 28].</li>
+                                <li>Collaborating with ASIC team for Erratas, ASIC Re-spin/upliftment's.</li>
+                                <li>Troubleshot deep technical issues in NX-OS software to identify and resolve bugs impacting system availability[cite: 37].</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <span class="block mono text-[10px] text-sky-400 font-bold mb-3 uppercase tracking-widest">Product & Release Management</span>
+                            <ul class="list-square list-inside space-y-2 ml-2">
+                                <li>Acted as Release Lead for maintenance/Feature releases, scrubbing all outstanding bugs to ensure software quality[cite: 29].</li>
+                                <li>Led multiple Customer Assurance Programs and managed the release of critical software patches to address specific customer defects[cite: 30].</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <span class="block mono text-[10px] text-sky-400 font-bold mb-3 uppercase tracking-widest">Strategic Initiatives & Training</span>
+                            <ul class="list-square list-inside space-y-2 ml-2">
+                                <li>Authored and approved field-facing documentation, including Field Notices with multi-million dollar business implications.</li>
+                                <li>Early Field Trial testing, benchmarking new platforms (Performance/line rate/feature comparison)[cite: 32].</li>
+                                <li>Authored several Gold standard whitepapers on Vxlan Multisite Design, Silicon1 Platform debugging, and Nexus 9k Clock management which became key customer resources[cite: 34].</li>
+                                <li>Delivered targeted training to Cisco's Customer Experience (CX) and sales organizations to drive hardened, consistent data center deployments[cite: 38].</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-item opacity-70">
+                    <div class="flex justify-between items-start mb-1">
+                        <h3 class="text-lg font-bold text-white uppercase tracking-tight">Escalation Engineer, Customer Delivery</h3>
+                        <span class="mono text-xs uppercase font-bold text-sky-400 tracking-widest">Feb 2011 – Oct 2015</span>
+                    </div>
+                    <p class="text-sm font-semibold text-slate-500 mb-4 uppercase tracking-wider">Cisco Systems | Bangalore, India [cite: 41]</p>
+                    <ul class="text-xs space-y-2 text-slate-400 ml-2 list-disc list-inside">
+                        <li>Served as a backbone TAC Escalation Engineer and Subject Matter Expert (SME) for Catalyst and Nexus platforms[cite: 42].</li>
+                        <li>Troubleshot and resolved complex performance issues in large-scale customer data centers[cite: 43].</li>
+                        <li>Designed intricate lab environments to replicate and solve critical customer problems[cite: 44].</li>
+                        <li>Authored several external/Internal-facing technical documents on ACL logging, FabricPath, and vPC[cite: 45].</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
